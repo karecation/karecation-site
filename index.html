@@ -1175,8 +1175,7 @@
     today.setHours(0, 0, 0, 0);
     const BOOKED_DATES_STORAGE_KEY = 'karecationBookedDates';
     const bookedDateOffsets = [];
-    const defaultBookedDates = bookedDateOffsets.map(function (offset) {
-      const date = new Date(today);
+    const defaultBookedDates = [];
       date.setDate(today.getDate() + offset);
       return toISODate(date);
     });
