@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Cart | Karecation</title>
+  <meta name="description" content="Edit travelers and preferred date before booking request.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">Karecation<small>Premium K-Beauty Concierge</small></a>
+      <nav class="main-nav" aria-label="Main">
+        <a data-page="home" href="index.html">Home</a>
+        <a data-page="programs" href="programs.html">Programs</a>
+        <a data-page="booking" href="booking.html">Book</a>
+        <a data-page="about" href="about.html">About</a>
+        <a data-page="faq" href="faq.html">FAQ</a>
+        <a data-page="contact" href="contact.html">Contact</a>
+      </nav>
+      <a class="cart-entry" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Cart</p>
+        <h1>Final check before booking request</h1>
+        <p class="lead">Changes here are automatically reflected in the next booking step.</p>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container cart-layout">
+        <div class="cart-items" id="cartItems"></div>
+
+        <aside class="summary-card">
+          <h3 class="display" style="margin-bottom:8px;">Order Estimate</h3>
+          <div class="total-row"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+          <div class="total-row"><span>Service (5%)</span><span id="cartService">$0</span></div>
+          <hr style="border:none; border-top:1px solid var(--line); margin:8px 0;">
+          <div class="total-row"><strong>Total</strong><strong id="cartTotal">$0</strong></div>
+          <p class="muted" style="font-size:.78rem; margin:8px 0 10px;">This estimate is carried to booking request summary.</p>
+          <a class="btn btn-primary" style="width:100%;" href="booking.html">Proceed to Booking</a>
+          <a class="btn btn-secondary" style="width:100%; margin-top:8px;" href="programs.html">Add More Programs</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Need a cheaper entry point? Add <strong>Quick Concierge Consultation (from $50~)</strong>.</div>
+  </footer>
+
+  <a class="floating-cart" href="cart.html">Cart <strong data-cart-count>0</strong></a>
+  <div class="container"><p id="globalFlash" class="status-message"></p></div>
+</body>
+</html>
+
